@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Techno Reward</title>
+  <meta name="description" content="اپلیکیشن موتور پاداش عملکرد شبکه فروش توسن تکنو">
+  <meta name="apple-mobile-web-app-title" content="Techno Reward">
+  <meta name="theme-color" content="#004a8f">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="assets/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/splash.css">
+</head>
+<body>
+
+  <!-- صفحه Splash: دقیقاً ۵ ثانیه -->
+  <div id="splash" role="status" aria-label="در حال بارگذاری">
+    <div class="splash-grid" aria-hidden="true"></div>
+    <div class="splash-inner">
+      <img class="splash-logo" src="assets/logo.png" alt="توسن تکنو" width="320">
+      <h1 class="splash-title">اپلیکیشن موتور پاداش عملکرد شبکه فروش توسن تکنو</h1>
+      <div class="splash-bar" aria-hidden="true"><i></i></div>
+    </div>
+  </div>
+
+  <div id="app" class="app" hidden>
+    <header class="topbar no-print">
+      <div class="brand">
+        <img src="assets/logo.png" alt="توسن تکنو" class="brand-logo" width="56" height="44">
+        <div class="brand-text">
+          <strong>اپلیکیشن موتور پاداش عملکرد شبکه فروش توسن تکنو</strong>
+          <span>Techno Reward</span>
+        </div>
+      </div>
+      <div class="top-actions">
+        <span id="save-status" class="save-status" aria-live="polite"></span>
+        <button id="btn-install" class="btn btn-ghost" hidden>نصب برنامه</button>
+      </div>
+    </header>
+
+    <nav class="tabs no-print" id="tabs" role="tablist" aria-label="بخش‌های برنامه"></nav>
+
+    <div id="banner" class="banner-wrap no-print"></div>
+
+    <div class="print-head" aria-hidden="true">
+      <img src="assets/logo.png" alt="" width="90">
+      <div><strong>اپلیکیشن موتور پاداش عملکرد شبکه فروش توسن تکنو</strong><br><span id="print-date"></span></div>
+    </div>
+
+    <main id="view" class="view" tabindex="-1"></main>
+
+    <footer class="foot no-print">
+      <span>همهٔ محاسبات در مرورگر شما انجام و ذخیره می‌شود؛ هیچ داده‌ای به سرور ارسال نمی‌شود.</span>
+    </footer>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toast-root" aria-live="polite"></div>
+
+  <script src="js/calculations.js"></script>
+  <script src="js/referrals.js"></script>
+  <script src="js/players.js"></script>
+  <script src="js/reward-engine.js"></script>
+  <script src="js/reports.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/export.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
